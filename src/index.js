@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import { createStore  } from 'redux';
+import { createStore, applyMiddleware  } from 'redux';
 import reducers from './components/reducers';
 import { Provider } from 'react-redux';
+import reduxThunk from 'redux-thunk';
+import './css/iconos.css';
 
 const store = createStore(
   reducers, // todos los reducers
-  {} // estado inicial
+  {}, // estado inicial
+  applyMiddleware(reduxThunk)
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
