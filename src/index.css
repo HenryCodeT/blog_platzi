@@ -40,3 +40,6 @@
     transform: rotate(360deg);
   }
 }
+.pub_titulo{
+  border-top: 1px solid black;
+}
