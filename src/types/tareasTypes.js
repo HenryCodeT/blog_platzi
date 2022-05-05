@@ -1,0 +1,3 @@
+export const TRAER_TAREAS = 'TRAER_TAREAS';
+export const CARGANDO_TAREAS = 'CARGANDO_TAREAS';
+export const ERROR_TAREAS = 'ERROR_TAREAS';
