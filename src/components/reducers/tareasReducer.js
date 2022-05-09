@@ -37,6 +37,13 @@ export default ( state= INITIAL_STATE, action ) => {
                 ...state,
                 titulo:action.payload
             }
+        case 'agregada':
+            return {
+                ...state,
+                tareas:{},
+                cargando: false,
+                error: ''
+            }
             default:
             return state;
     }
