@@ -1,3 +1,7 @@
 export const TRAER_TAREAS = 'TRAER_TAREAS';
 export const CARGANDO_TAREAS = 'CARGANDO_TAREAS';
 export const ERROR_TAREAS = 'ERROR_TAREAS';
+
+export const CAMBIO_USUARIO_ID = 'CAMBIO_USUARIO_ID';
+export const CAMBIO_TITULO = 'CAMBIO_TITULO';
+export const AGREGADA = 'AGRAGEDA';

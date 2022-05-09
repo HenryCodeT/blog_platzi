@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 
 class Tareas extends Component {
     componentDidMount(){
-        this.props.traerTareas()
+        if (!Object.keys(this.props.tareas).length) {
+            this.props.traerTareas()
+        }
     }
     
     mostrarContenido = () =>{
